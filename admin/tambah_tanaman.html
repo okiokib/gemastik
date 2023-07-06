@@ -130,28 +130,19 @@
           </div>
 
           <div class="navbar-nav-right d-flex align-items-center" id="navbar-collapse">
-            <!-- Ucapan Selamat Datang -->
+            <!-- Search -->
             <div class="navbar-nav align-items-center">
-              <div class="nav-item">
-                <span class="fw-semibold d-block">Selamat datang, Oki!</span>
+              <div class="nav-item d-flex align-items-center">
+                <i class="bx bx-search fs-4 lh-0"></i>
+                <input type="text" class="form-control border-0 shadow-none" placeholder="Search..."
+                  aria-label="Search..." />
               </div>
             </div>
-            <!-- /Ucapan Selamat Datang -->
-
-            <!-- Search -->
-            <ul class="navbar-nav flex-row align-items-center ms-auto">
-              <li class="nav-item">
-                <div class="nav-item d-flex align-items-center">
-                  <i class="bx bx-search fs-4 lh-0"></i>
-                  <input type="text" class="form-control border-0 shadow-none" placeholder="Search..."
-                    aria-label="Search..." />
-                </div>
-              </li>
-            </ul>
             <!-- /Search -->
 
-            <!-- Profil dan Pengaturan -->
-            <ul class="navbar-nav flex-row align-items-center ms-3">
+            <ul class="navbar-nav flex-row align-items-center ms-auto">
+
+              <!-- User -->
               <li class="nav-item navbar-dropdown dropdown-user dropdown">
                 <a class="nav-link dropdown-toggle hide-arrow" href="javascript:void(0);" data-bs-toggle="dropdown">
                   <div class="avatar avatar-online">
@@ -168,7 +159,8 @@
                           </div>
                         </div>
                         <div class="flex-grow-1">
-                          <span class="fw-semibold d-block">OKi</span>
+                          <span class="fw-semibold d-block">John Doe</span>
+                          <small class="text-muted">Admin</small>
                         </div>
                       </div>
                     </a>
@@ -182,22 +174,15 @@
                       <span class="align-middle">My Profile</span>
                     </a>
                   </li>
-                  <li>
-                    <a class="dropdown-item" href="#">
-                      <i class="bx bx-cog me-2"></i>
-                      <span class="align-middle">Settings</span>
-                    </a>
-                  </li>
-                  <li>
-                    <a class="dropdown-item" href="auth-login-basic.html">
-                      <i class="bx bx-power-off me-2"></i>
-                      <span class="align-middle">Log Out</span>
-                    </a>
-                  </li>
-                </ul>
+                  <a class="dropdown-item" href="auth-login-basic.html">
+                    <i class="bx bx-power-off me-2"></i>
+                    <span class="align-middle">Log Out</span>
+                  </a>
               </li>
             </ul>
-            <!-- /Profil dan Pengaturan -->
+            </li>
+            <!--/ User -->
+            </ul>
           </div>
         </nav>
 
@@ -275,7 +260,6 @@
                   </div>
                 </div>
               </div>
-
 
               <div class="row" id="formTahapanBudidaya" style="display: none;">
                 <h4 class="fw-bold py-3 mb-4"><span class="text-muted fw-light"></span>Form Tahapan Budidaya</h4>
@@ -356,37 +340,69 @@
                               <label class="form-check-label" for="defaultCheck12"> Tahapan </label>
                             </div>
                           </div>
+                          <div class="d-flex justify-content-between mt-3">
+                            <button class="btn btn-outline-primary" id="btnKembali">Kembali</button>
+                            <button class="btn btn-primary" id="selanjut">Selanjutnnya</button>
+                          </div>
                         </div>
                       </div>
-
-                      <div class="row" id="formTahapanKegiatan" style="display: none;">
-                        <!-- Container untuk form-form tambahan -->
-                      </div>
-
-                      <div class="row mb-2">
-                        <div class="col-md-10">
-                          <button class="btn btn-primary mt-3" id="btnKembali">Kembali</button>
-                        </div>
-                        <div class="col">
-                          <button class="btn btn-success" type="submit">Submit</button>
-                        </div>
-                      </div>
-
                     </div>
                   </div>
                 </div>
               </div>
 
+              <div class="row" id="formTahapanKegiatan" style="display: none;">
+                <h4 class="fw-bold py-3 mb-4"><span class="text-muted fw-light"></span>Form Kegiatan</h4>
+                <div class="col-xl">
+                  <div class="card mb-4">
+                    <div class="card-body">
+                      <div class="row">
+                        <div class="col">
+                          <label for="formFile" class="form-label">Tambah Tahapan</label>
+                        </div>
+                        <div class="col">
+                          <button type="button" class="btn btn-primary float-end" id="tambah">Tambah</button>
+                        </div>
+                      </div>
 
+                      <div class="mb-3 " id="formContainer">
+                        <div class="waktu-container mb-3">
+                          <label class="form-label" for="basic-default-fullname">Waktu</label>
+                          <input type="text" class="form-control" placeholder="Tambah waktu" />
+                        </div>
+                        <div class="mb-3">
+                          <label class="form-label" for="basic-default-fullname">Judul</label>
+                          <input type="text" class="form-control" placeholder="Tambah Judul" />
+                        </div>
+                        <div class="mb-3">
+                          <label for="formFile" class="form-label">Gambar Tanaman</label>
+                          <input class="form-control" type="file" id="formFile" />
+                        </div>
+                        <div class="mb-3">
+                          <label class="form-label" for="basic-default-fullname">Deskripsi</label>
+                          <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                        </div>
+                        <hr style="height: 3px;">
+                      </div>
 
+                      <div class="d-flex justify-content-between mt-3">
+                        <button class="btn btn-outline-primary" id="Kembali">Kembali</button>
+                        <button class="btn btn-primary" id="lanjut">Selanjutnya</button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
 
             </form>
             <script>
               // Ambil elemen tombol "Selanjutnya" pada Form Tambah Tanaman
               const selanjutnyaBtn = document.querySelector('#formTambahTanaman button');
+              const selanjutnyabtn = document.querySelector('#formTahapanBudidaya #selanjut');
 
               // Ambil elemen tombol "Kembali" pada Form Tahapan Budidaya
               const kembaliBtn = document.querySelector('#formTahapanBudidaya #btnKembali');
+              const kembalibtn = document.querySelector('#formTahapanKegiatan #Kembali');
 
               // Fungsi untuk menampilkan Form Tahapan Budidaya dan menyembunyikan Form Tambah Tanaman
               function tampilkanFormTahapan() {
@@ -394,10 +410,20 @@
                 document.getElementById('formTahapanBudidaya').style.display = 'block';
               }
 
+              function tampilkanTahapan() {
+                document.getElementById('formTahapanBudidaya').style.display = 'none';
+                document.getElementById('formTahapanKegiatan').style.display = 'block';
+              }
+
               // Fungsi untuk menampilkan Form Tambah Tanaman dan menyembunyikan Form Tahapan Budidaya
               function tampilkanFormTambahTanaman() {
                 document.getElementById('formTambahTanaman').style.display = 'block';
                 document.getElementById('formTahapanBudidaya').style.display = 'none';
+              }
+
+              function tampilkanFormBudidaya() {
+                document.getElementById('formTahapanBudidaya').style.display = 'block';
+                document.getElementById('formTahapanKegiatan').style.display = 'none';
               }
 
               // Tambahkan event listener pada tombol "Selanjutnya" pada Form Tambah Tanaman
@@ -407,6 +433,12 @@
                 tampilkanFormTahapan();
               });
 
+              selanjutnyabtn.addEventListener('click', function (e) {
+                e.preventDefault(); // Mencegah pengiriman form (default action)
+
+                tampilkanTahapan();
+              });
+
               // Tambahkan event listener pada tombol "Kembali" pada Form Tahapan Budidaya
               kembaliBtn.addEventListener('click', function (e) {
                 e.preventDefault(); // Mencegah pengiriman form (default action)
@@ -414,98 +446,52 @@
                 tampilkanFormTambahTanaman();
               });
 
-              function addWaktu(tahapan) {
-                var waktuContainer = document.getElementById(tahapan + "-form").querySelector(".waktu-container");
+              kembalibtn.addEventListener('click', function (e) {
+                e.preventDefault(); // Mencegah pengiriman form (default action)
 
-                var formGroup = document.createElement("div");
-                formGroup.className = " mb-4";
-                formGroup.innerHTML = `
-                  
-                      <div class="waktu-container mb-3">
-                        <label class="form-label" for="basic-default-fullname">Waktu</label>
-                        <input type="text" class="form-control" placeholder="Tambah waktu" />
-                        <button type="button" class="btn btn-danger mt-2" onclick="hapusWaktu(this)">Hapus waktu</button>
-                      </div>
-                      <div class="mb-3">
-                        <label class="form-label" for="basic-default-fullname">Judul</label>
-                        <input type="text" class="form-control" placeholder="Tambah Judul" />
-                      </div>
-                      <div class="mb-3">
-                        <label for="formFile" class="form-label">Gambar Tanaman</label>
-                        <input class="form-control" type="file" id="formFile" />
-                      </div>
-                      <div class="mb-3">
-                        <label class="form-label" for="basic-default-fullname">Deskripsi</label>
-                        <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
-                      </div>
-      
+                tampilkanFormBudidaya();
+              });
+
+
+              // Fungsi untuk menambahkan form baru
+              function tambahForm() {
+                var formContainer = document.getElementById("formContainer");
+
+                var div = document.createElement("div");
+                div.classList.add("form-item");
+
+                div.innerHTML = `
+                  <label class="form-label" for="basic-default-fullname">Waktu</label>
+                  <input type="text" class="form-control" name="waktu[]" placeholder="Tambah waktu" />
+
+                  <label class="form-label" for="basic-default-fullname">Judul</label>
+                  <input type="text" class="form-control" name="judul[]" placeholder="Tambah Judul" />
+
+                  <label class="form-label" for="formFile">Gambar Tanaman</label>
+                  <input class="form-control" type="file" name="gambar[]" />
+
+                  <label class="form-label" for="basic-default-fullname">Deskripsi</label>
+                  <textarea class="form-control" name="deskripsi[]" rows="3"></textarea>
+
+                  <div class="d-flex justify-content-center">
+                    <button type="button" class="btn btn-danger mt-2" onclick="hapusForm(this)">Hapus</button>
+                  </div>
+                  <hr style="height: 3px;">
                 `;
 
-                waktuContainer.appendChild(formGroup);
+                formContainer.appendChild(div);
               }
 
-              function hapusWaktu(button) {
-                var waktuContainer = button.parentNode;
-                waktuContainer.remove();
+              // Fungsi untuk menghapus form
+              function hapusForm(button) {
+                var formItem = button.parentNode.parentNode;
+                formItem.remove();
               }
 
-              function toggleTahapanDetails(checkboxId) {
-                var checkedCheckboxes = document.querySelectorAll('input[type="checkbox"]:checked');
-                var formTahapanKegiatanContainer = document.getElementById("formTahapanKegiatan");
-
-                var existingForms = formTahapanKegiatanContainer.querySelectorAll(".row");
-
-                var selectedTahapans = [];
-
-                checkedCheckboxes.forEach(function (checkedCheckbox) {
-                  var tahapan = checkedCheckbox.value;
-
-                  selectedTahapans.push(tahapan);
-
-                  // Cek apakah form dengan tahapan yang sama sudah ada
-                  var existingForm = formTahapanKegiatanContainer.querySelector("#" + tahapan + "-form");
-
-                  if (!existingForm) {
-                    var formGroup = document.createElement("div");
-                    formGroup.className = "row";
-                    formGroup.id = tahapan + "-form";
-                    formGroup.innerHTML = `
-                      <h4 class="fw-bold py-3 mb-4"><span class="text-muted fw-light"></span>Form Tambah Kegiatan - ${tahapan}</h4>
-                      <div class="col-xl">
-                        <button type="button" class="btn btn-primary mb-3" onclick="addWaktu('${tahapan}')">Tambah form</button>
-                        <div class="waktu-container mb-3"></div>      
-                      </div>
-                    `;
-                    formTahapanKegiatanContainer.appendChild(formGroup);
-                  }
-                });
-
-                // Hapus form yang tidak terpilih lagi
-                existingForms.forEach(function (existingForm) {
-                  var existingTahapan = existingForm.id.replace("-form", "");
-
-                  if (!selectedTahapans.includes(existingTahapan)) {
-                    existingForm.remove();
-                  }
-                });
-
-                if (checkedCheckboxes.length > 0) {
-                  formTahapanKegiatanContainer.style.display = "block";
-                } else {
-                  formTahapanKegiatanContainer.style.display = "none";
-                }
-              }
+              // Menambahkan event listener pada tombol "Tambah Form"
+              var tambahButton = document.getElementById("tambah");
+              tambahButton.addEventListener("click", tambahForm);
             </script>
-
-
-
-
-
-
-
-
-
-
             <!-- / Content -->
 
             <!-- Footer -->

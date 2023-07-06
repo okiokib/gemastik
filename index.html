@@ -1,184 +1,392 @@
 <!DOCTYPE html>
-<html lang="en" class="light-style customizer-hide" dir="ltr" data-theme="theme-default" data-assets-path="assets/"
-  data-template="vertical-menu-template-free">
+<html lang="en">
 
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport"
-    content="width=device-width, initial-scale=1.0, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0" />
 
-  <title>Login</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="">
+  <meta name="author" content="">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap"
+    rel="stylesheet">
 
-  <meta name="description" content="" />
+  <title>landing page</title>
 
-  <!-- Favicon -->
-  <link rel="icon" type="image/x-icon" href="assets/img/favicon/favicon.ico" />
+  <!-- Bootstrap core CSS -->
+  <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
 
-  <!-- Fonts -->
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link
-    href="https://fonts.googleapis.com/css2?family=Public+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap"
-    rel="stylesheet" />
+
+  <!-- Additional CSS Files -->
+  <link rel="stylesheet" href="assets/css/fontawesome.css">
+  <link rel="stylesheet" href="assets/css/templatemo-digimedia-v3.css">
+  <link rel="stylesheet" href="assets/css/animated.css">
+  <link rel="stylesheet" href="assets/css/owl.css">
 
   <!-- Icons. Uncomment required icon fonts -->
-  <link rel="stylesheet" href="assets/vendor/fonts/boxicons.css" />
+  <link rel="stylesheet" href="/assets/vendor/fonts/boxicons.css" />
 
   <!-- Core CSS -->
-  <link rel="stylesheet" href="assets/vendor/css/core.css" class="template-customizer-core-css" />
-  <link rel="stylesheet" href="assets/vendor/css/theme-default.css" class="template-customizer-theme-css" />
-  <link rel="stylesheet" href="assets/css/demo.css" />
+  <link rel="stylesheet" href="/assets/vendor/css/core.css" class="template-customizer-core-css" />
+  <link rel="stylesheet" href="/assets/vendor/css/theme-default.css" class="template-customizer-theme-css" />
 
-  <!-- Vendors CSS -->
-  <link rel="stylesheet" href="assets/vendor/libs/perfect-scrollbar/perfect-scrollbar.css" />
-
-  <!-- Page CSS -->
   <!-- Page -->
-  <link rel="stylesheet" href="assets/vendor/css/pages/page-auth.css" />
+  <link rel="stylesheet" href="/assets/vendor/css/pages/page-auth.css" />
   <!-- Helpers -->
-  <script src="assets/vendor/js/helpers.js"></script>
 
-  <!--! Template customizer & Theme config files MUST be included after core stylesheets and helpers.js in the <head> section -->
-  <!--? Config:  Mandatory theme config file contain global vars & default theme options, Set your preferred theme option in this file.  -->
-  <script src="assets/js/config.js"></script>
 </head>
 
 <body>
-  <!-- Content -->
 
-  <div class="container-xxl">
-    <div class="authentication-wrapper authentication-basic container-p-y">
-      <div class="authentication-inner">
-        <!-- Register -->
-        <div class="card" style="
-          position: relative;
-        ">
+  <!-- ***** Preloader Start ***** -->
+  <div id="js-preloader" class="js-preloader">
+    <div class="preloader-inner">
+      <span class="dot"></span>
+      <div class="dots">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+    </div>
+  </div>
+  <!-- ***** Preloader End ***** -->
 
-          <div class="card-body">
-            <div class="card-close" onclick="closeCard()" style="position: absolute;
-            top: 10px;
-            right: 10px;
-            cursor: pointer;">
-              <i class="bx bx-x"></i>
+  <!-- ***** Header Area Start ***** -->
+  <header class="header-area header-sticky wow slideInDown" data-wow-duration="0.75s" data-wow-delay="0s">
+    <div class="container">
+      <div class="row">
+        <div class="col-12">
+          <nav class="main-nav">
+            <!-- ***** Logo Start #gGANTI LOGO E-->
+            <a href="index.html" class="logo">
+              <img src="assets/images/logo_new (2).png" alt="" style="width: 350px;">
+            </a>
+            <!-- ***** Logo End ***** -->
+            <!-- ***** Menu Start ***** -->
+            <ul class="nav">
+              <li class="scroll-to-section"><a href="#top" class="active">Home</a></li>
+              <li class="scroll-to-section"><a href="#about">About</a></li>
+              <li class="scroll-to-section"><a href="#services">Fitur</a></li>
+              <li class="scroll-to-section"><a href="#portfolio">Tanaman</a></li>
+              <li class="scroll-to-section"><div class="border-first-button"><a href="login/login.html">Login</a></div></li>
+            </ul>        
+            <a class='menu-trigger'>
+                <span>Menu</span>
+            </a>
+            <!-- ***** Menu End ***** -->
+          </nav>
+        </div>
+      </div>
+    </div>
+  </header>
+  <!-- ***** Header Area End ***** -->
+
+  <div class="main-banner wow fadeIn" id="top" data-wow-duration="1s" data-wow-delay="0.5s">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-12">
+          <div class="row">
+            <div class="col-lg-6 align-self-center">
+              <div class="left-content show-up header-text wow fadeInLeft" data-wow-duration="1s" data-wow-delay="1s">
+                <div class="row">
+                  <div class="col-lg-12">
+                    <h6>Agro Tech Solution</h6>
+                    <h2>Inovatif dan Intereaktif</h2>
+                    <p class="" style="text-align: justify; color: rgb(108, 135, 167);">🌱 Nikmati fitur perencanaan tanam interaktif kami yang dirancang khusus untuk membantu petani. Dengan menggunakan algoritma canggih dan data terkini, kami memberikan rekomendasi waktu optimal untuk menanam berbagai jenis tanaman, penggunaan pupuk yang tepat, dan langkah-langkah perawatan yang diperlukan.</p>
+                  </div>
+                  <div class="col-lg-12">
+                    <div class="border-first-button scroll-to-section">
+                      <a href="#contact">Login</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
             </div>
-            <!-- Logo -->
-            <div class="app-brand justify-content-center">
-              <a href="index.html" class="app-brand-link gap-2">
-                <span class="app-brand-logo demo">
-                  <svg width="25" viewBox="0 0 25 42" version="1.1" xmlns="http://www.w3.org/2000/svg"
-                    xmlns:xlink="http://www.w3.org/1999/xlink">
-                    <defs>
-                      <path
-                        d="M13.7918663,0.358365126 L3.39788168,7.44174259 C0.566865006,9.69408886 -0.379795268,12.4788597 0.557900856,15.7960551 C0.68998853,16.2305145 1.09562888,17.7872135 3.12357076,19.2293357 C3.8146334,19.7207684 5.32369333,20.3834223 7.65075054,21.2172976 L7.59773219,21.2525164 L2.63468769,24.5493413 C0.445452254,26.3002124 0.0884951797,28.5083815 1.56381646,31.1738486 C2.83770406,32.8170431 5.20850219,33.2640127 7.09180128,32.5391577 C8.347334,32.0559211 11.4559176,30.0011079 16.4175519,26.3747182 C18.0338572,24.4997857 18.6973423,22.4544883 18.4080071,20.2388261 C17.963753,17.5346866 16.1776345,15.5799961 13.0496516,14.3747546 L10.9194936,13.4715819 L18.6192054,7.984237 L13.7918663,0.358365126 Z"
-                        id="path-1"></path>
-                      <path
-                        d="M5.47320593,6.00457225 C4.05321814,8.216144 4.36334763,10.0722806 6.40359441,11.5729822 C8.61520715,12.571656 10.0999176,13.2171421 10.8577257,13.5094407 L15.5088241,14.433041 L18.6192054,7.984237 C15.5364148,3.11535317 13.9273018,0.573395879 13.7918663,0.358365126 C13.5790555,0.511491653 10.8061687,2.3935607 5.47320593,6.00457225 Z"
-                        id="path-3"></path>
-                      <path
-                        d="M7.50063644,21.2294429 L12.3234468,23.3159332 C14.1688022,24.7579751 14.397098,26.4880487 13.008334,28.506154 C11.6195701,30.5242593 10.3099883,31.790241 9.07958868,32.3040991 C5.78142938,33.4346997 4.13234973,34 4.13234973,34 C4.13234973,34 2.75489982,33.0538207 2.37032616e-14,31.1614621 C-0.55822714,27.8186216 -0.55822714,26.0572515 -4.05231404e-15,25.8773518 C0.83734071,25.6075023 2.77988457,22.8248993 3.3049379,22.52991 C3.65497346,22.3332504 5.05353963,21.8997614 7.50063644,21.2294429 Z"
-                        id="path-4"></path>
-                      <path
-                        d="M20.6,7.13333333 L25.6,13.8 C26.2627417,14.6836556 26.0836556,15.9372583 25.2,16.6 C24.8538077,16.8596443 24.4327404,17 24,17 L14,17 C12.8954305,17 12,16.1045695 12,15 C12,14.5672596 12.1403557,14.1461923 12.4,13.8 L17.4,7.13333333 C18.0627417,6.24967773 19.3163444,6.07059163 20.2,6.73333333 C20.3516113,6.84704183 20.4862915,6.981722 20.6,7.13333333 Z"
-                        id="path-5"></path>
-                    </defs>
-                    <g id="g-app-brand" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
-                      <g id="Brand-Logo" transform="translate(-27.000000, -15.000000)">
-                        <g id="Icon" transform="translate(27.000000, 15.000000)">
-                          <g id="Mask" transform="translate(0.000000, 8.000000)">
-                            <mask id="mask-2" fill="white">
-                              <use xlink:href="#path-1"></use>
-                            </mask>
-                            <use fill="#696cff" xlink:href="#path-1"></use>
-                            <g id="Path-3" mask="url(#mask-2)">
-                              <use fill="#696cff" xlink:href="#path-3"></use>
-                              <use fill-opacity="0.2" fill="#FFFFFF" xlink:href="#path-3"></use>
-                            </g>
-                            <g id="Path-4" mask="url(#mask-2)">
-                              <use fill="#696cff" xlink:href="#path-4"></use>
-                              <use fill-opacity="0.2" fill="#FFFFFF" xlink:href="#path-4"></use>
-                            </g>
-                          </g>
-                          <g id="Triangle"
-                            transform="translate(19.000000, 11.000000) rotate(-300.000000) translate(-19.000000, -11.000000) ">
-                            <use fill="#696cff" xlink:href="#path-5"></use>
-                            <use fill-opacity="0.2" fill="#FFFFFF" xlink:href="#path-5"></use>
-                          </g>
-                        </g>
-                      </g>
-                    </g>
-                  </svg>
-                </span>
-                <span class="app-brand-text demo text-body fw-bolder">AgroTEch</span>
-              </a>
+            <div class="col-lg-6">
+              <div class="right-image wow fadeInRight" data-wow-duration="1s" data-wow-delay="0.5s">
+                <img src="assets/images/home.png" alt="" style="width: 650px;">
+              </div>
             </div>
-            <!-- /Logo -->
-            <h4 class="mb-2 text-center">Selamat Datang Di AgroTech 🍀</h4>
-            <p class="mb-4 text-center">Silakan Masukan Email dan Password untuk Login</p>
-
-            <!-- <form id="formAuthentication" class="mb-3" action="#" method="POST"> -->
-              <div class="mb-3">
-                <label for="email" class="form-label">Email</label>
-                <input type="text" class="form-control" id="email" name="email" placeholder="masukan email" autofocus />
-              </div>
-              <div class="mb-3 form-password-toggle">
-                <div class="d-flex justify-content-between">
-                  <label class="form-label" for="password">Password</label>
-                  <a href="login/lupa_password.html">
-                    <small>Lupa Password?</small>
-                  </a>
-                </div>
-                <div class="input-group input-group-merge">
-                  <input type="password" id="password" class="form-control" name="password"
-                    placeholder="&#xb7;&#xb7;&#xb7;&#xb7;&#xb7;&#xb7;&#xb7;&#xb7;&#xb7;&#xb7;&#xb7;&#xb7;"
-                    aria-describedby="password" />
-                  <span class="input-group-text cursor-pointer"><i class="bx bx-hide"></i></span>
-                </div>
-              </div>
-              <div class="mb-3">
-                <div class="form-check">
-                  <input class="form-check-input" type="checkbox" id="remember-me" />
-                  <label class="form-check-label" for="remember-me">Ingat Saya</label>
-                </div>
-              </div>
-              <div class="mb-3">
-                <a href="user/dasboard.html"><button class="btn btn-primary d-grid w-100" type="submit">Masuk</button></a>
-              </div>
-            </form>
-
-            <p class="text-center">
-              <span>Pengguna baru?</span>
-              <a href="login/registrasi.html">
-                <span>Buat akun</span>
-              </a>
-            </p>
           </div>
         </div>
-        <!-- /Register -->
       </div>
     </div>
   </div>
 
-  <!-- / Content -->
+  <div id="about" class="about section">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-12">
+          <div class="row">
+            <div class="col-lg-6">
+              <div class="about-left-image  wow fadeInLeft" data-wow-duration="1s" data-wow-delay="0.5s">
+                <img src="assets/images/about.png" alt="">
+              </div>
+            </div>
+            <div class="col-lg-6 align-self-center  wow fadeInRight" data-wow-duration="1s" data-wow-delay="0.5s">
+              <div class="about-right-content">
+                <div class="section-heading">
+                  <h6>About Us</h6>
+                  <h4>Apa itu Agro Tech <em>Solution?</em></h4>
+                  <div class="line-dec"></div>
+                </div>
+                <p style="text-align: justify;  color: rgb(108, 135, 167);">AgroTech Solutions adalah tim yang berdedikasi untuk mengembangkan pertanian melalui pendekatan inovatif dan teknologi terkini. Kami berkomitmen untuk memberikan solusi yang relevan dan memberdayakan petani serta pelaku agribisnis dalam menghadapi tantangan dan memanfaatkan peluang di sektor pertanian.
 
-  <!-- Core JS -->
-  <!-- build:js assets/vendor/js/core.js -->
-  <script src="assets/vendor/libs/jquery/jquery.js"></script>
-  <script src="assets/vendor/libs/popper/popper.js"></script>
-  <script src="assets/vendor/js/bootstrap.js"></script>
-  <script src="assets/vendor/libs/perfect-scrollbar/perfect-scrollbar.js"></script>
+                  Visi kami adalah mendorong kemajuan pertanian melalui platform web edukasi yang inovatif. Kami percaya bahwa pengetahuan yang mutakhir dan praktik terbaik merupakan kunci untuk mencapai pertanian yang berkelanjutan, efisien, dan menghasilkan hasil panen yang optimal.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
 
-  <script src="assets/vendor/js/menu.js"></script>
-  <!-- endbuild -->
+  <div id="services" class="services section">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-12">
+          <div class="section-heading  wow fadeInDown" data-wow-duration="1s" data-wow-delay="0.5s">
+            <h6>Fitur</h6>
+            <h4>Fitur yang<em>Tesedia</em></h4>
+            <div class="line-dec"></div>
+          </div>
+        </div>
+        <div class="col-lg-12">
+          <div class="naccs">
+            <div class="grid">
+              <div class="row">
+                <div class="col-lg-12">
+                  <div class="menu">
+                    <div class="first-thumb active">
+                      <div class="thumb">
+                        <span class="icon"><img src="assets/images/1.png" alt=""></span>
+                        Tips Budidaya
+                      </div>
+                    </div>
+                    <div>
+                      <div class="thumb">
+                        <span class="icon"><img src="assets/images/kalkulator2.png" alt=""></span>
+                        Perencanaan
+                      </div>
+                    </div>
+                    <div>
+                      <div class="thumb">
+                        <span class="icon"><img src="assets/images/diskusi2.png" alt=""></span>
+                       Forum
+                      </div>
+                    </div>
+                    <div class="last-thumb">
+                      <div class="thumb">
+                        <span class="icon"><img src="assets/images/deteksi_hama.png" alt=""></span>
+                       Deteksi Hama
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-lg-12">
+                  <ul class="nacc">
+                    <li class="active">
+                      <div>
+                        <div class="thumb">
+                          <div class="row">
+                            <div class="col-lg-6 align-self-center">
+                              <div class="left-text">
+                                <h4>Tips Budidaya</h4>
+                                <p style="text-align: justify;  color: rgb(108, 135, 167);" >Budidaya tanaman adalah proses menumbuhkan tanaman secara terencana dan intensif dengan tujuan komersial atau pemenuhan kebutuhan pribadi. Berikut ini adalah beberapa tips singkat untuk budidaya tanaman:</p>
+                                <div class="ticks-list"><span><i class="fa fa-check"></i> Pemilihan Tanaman </span>
+                                  <span><i class="fa fa-check"></i> Persiapan Lahan</span> 
+                                  <span><i class="fa fa-check"></i> Panen</span> 
+                                  
+                                </div>
+                                <p style=" color: rgb(108, 135, 167);">Dalam budidaya tanaman, kesabaran dan ketekunan adalah kunci keberhasilan.</p>
+                              </div>
+                            </div>
+                            <div class="col-lg-6 align-self-center">
+                              <div class="right-image">
+                                <img src="assets/images/tips_budidaya.png" alt="">
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </li>
+                    <li>
+                      <div>
+                        <div class="thumb">
+                          <div class="row">
+                            <div class="col-lg-6 align-self-center">
+                              <div class="left-text">
+                                <h4>Perencaan</h4>
+                                <p style="text-align: justify;  color: rgb(108, 135, 167);">Fitur perencanaan kami memberikan perhitungan yang akurat untuk kebutuhan pupuk dan air bagi tanaman Anda. Dengan menggunakan data yang relevan, seperti jenis tanaman, luas lahan, dan jenis tanah, kami dapat memberikan rekomendasi yang spesifik untuk penggunaan pupuk yang efisien.</p>
+                                <div class="ticks-list"><span><i class="fa fa-check"></i>Pemupukan </span>
+                                  <span><i class="fa fa-check"></i> Kebutuhan air</span>
+  
+                                </div>
+                                <p  color: rgb(108, 135, 167);>Dengan fitur perencanaan kami, Anda dapat dengan mudah menghitung kebutuhan pupuk dan air tanaman Anda</p>
+                              </div>
+                            </div>
+                            <div class="col-lg-6 align-self-center">
+                              <div class="right-image">
+                                <img src="assets/images/pupuk.png" alt="">
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </li>
+                    <li>
+                      <div>
+                        <div class="thumb">
+                          <div class="row">
+                            <div class="col-lg-6 align-self-center">
+                              <div class="left-text">
+                                <h4>Forum</h4>
+                                <p style="text-align: justify;  color: rgb(108, 135, 167);">Forum diskusi pertanian adalah fitur interaktif di mana petani, ahli pertanian, dan penggemar pertanian berkumpul untuk berbagi informasi, pengalaman, dan ide-ide terkait pertanian. Di sini, Anda dapat belajar, bertanya, dan berdiskusi tentang berbagai topik pertanian seperti teknik bercocok tanam, pengendalian hama, teknologi pertanian terbaru, dan praktik berkelanjutan.</p>
+                              </div>
+                            </div>
+                            <div class="col-lg-6 align-self-center">
+                              <div class="right-image">
+                                <img src="assets/images/forum_diskusi.png" alt="">
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </li>
+                    
+                    <li>
+                      <div>
+                        <div class="thumb">
+                          <div class="row">
+                            <div class="col-lg-6 align-self-center">
+                              <div class="left-text">
+                                <h4>Deteksi Hama</h4>
+                                <p style="text-align: justify;  color: rgb(108, 135, 167);">Fitur deteksi hama kami menggunakan teknologi canggih untuk mengidentifikasi dan mendeteksi keberadaan hama pada tanaman. Dengan menggunakan gambar yang diberikan, sistem kami akan menganalisis dan membandingkan dengan database hama yang ada. Fitur ini memberikan hasil deteksi yang akurat, membantu Anda mengidentifikasi hama dengan cepat dan mengambil tindakan pencegahan yang tepat.</p>
+                              </div>
+                            </div>
+                            <div class="col-lg-6 align-self-center">
+                              <div class="right-image">
+                                <img src="assets/images/deteksi_hama2.png" alt="">
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
 
-  <!-- Vendors JS -->
 
-  <!-- Main JS -->
-  <script src="assets/js/main.js"></script>
+  <div id="portfolio" class="our-portfolio section">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-5">
+          <div class="section-heading wow fadeInLeft" data-wow-duration="1s" data-wow-delay="0.3s">
+            <h6>Tanaman</h6>
+            <h4>Tanaman yang<em> Tersedia</em></h4>
+            <div class="line-dec"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="container-fluid wow fadeIn" data-wow-duration="1s" data-wow-delay="0.7s">
+      <div class="row">
+        <div class="col-lg-12">
+          <div class="loop owl-carousel">
+            <div class="item">
+              <a href="login/login.html">
+                <div class="portfolio-item">
+                  <div class="thumb">
+                    <img src="assets/images/lombok.png" alt="">
+                  </div>
+                  <div class="down-content">
+                    <h4>Lombok</h4>
+                  </div>
+                </div>
+              </a>
+            </div>
+            <div class="item">
+              <a href="login/login.html">
+                <div class="portfolio-item">
+                  <div class="thumb">
+                    <img src="assets/images/padi.png" alt="">
+                  </div>
+                  <div class="down-content">
+                    <h4>Padi</h4>
+                  </div>
+                </div>
+              </a>
+            </div>
+            <div class="item">
+              <a href="login/login.html">
+                <div class="portfolio-item">
+                  <div class="thumb">
+                    <img src="assets/images/jagung.png" alt="">
+                  </div>
+                  <div class="down-content">
+                    <h4>Jagung</h4>
+                  </div>
+                </div>
+              </a>
+            </div>
+            <div class="item">
+              <a href="login/login.html">
+                <div class="portfolio-item">
+                  <div class="thumb">
+                    <img src="assets/images/terong.png" alt="">
+                  </div>
+                  <div class="down-content">
+                    <h4>Terong</h4>
+                  </div>
+                </div>
+              </a>
+            </div>
+            <div class="item">
+              <a href="login/login.html">
+                <div class="portfolio-item">
+                  <div class="thumb">
+                    <img src="assets/images/tomat.png" alt="">
+                  </div>
+                  <div class="down-content">
+                    <h4>tomat</h4>
+                  </div>
+                </div>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
 
-  <!-- Page JS -->
+  <footer>
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-12">
+          <p>Copyright © 2023 Tu Win
+          </p>
+        </div>
+      </div>
+    </div>
+  </footer>
 
-  <!-- Place this tag in your head or just before your close body tag. -->
-  <script async defer src="https://buttons.github.io/buttons.js"></script>
+
+  <!-- Scripts -->
+  <script src="vendor/jquery/jquery.min.js"></script>
+  <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/js/owl-carousel.js"></script>
+  <script src="assets/js/animation.js"></script>
+  <script src="assets/js/imagesloaded.js"></script>
+  <script src="assets/js/custom.js"></script>
+
 </body>
 
 </html>
